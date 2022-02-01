@@ -1,0 +1,44 @@
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-159075394-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="/javascripts/plugins.js" type="module"></script>
+<script src="/javascripts/main.js"></script>
+<script>
+  /*
+  * Show message on variable value assigned to attribute by ejs
+  */
+    const value = document.querySelector('main').getAttribute('value')
+    if (value === 'info') {
+      document.getElementById('catalog').scrollIntoView()
+    } else if (value === 'email') {
+      document.getElementById('contact').scrollIntoView()
+    }
+</script>
+<script>
+    /*
+    * Show contact phone numbers during business hours.
+    * Script placed here to avoid public file caching.
+    */
+    const callNow = document.querySelector('.navbar-nav .nav-link:first-child')
+    const teamNumbers = document.querySelectorAll('#team .team-number')
+
+    const now = new Date().getUTCHours()
+    const day = new Date().getDay()
+
+    /**
+    *  check if value in now is between 8am and 4pm
+    *  and if Not a Saturday or Sunday
+    *  8am -> 8
+    *  4pm -> 14
+    */
+    if ((now >= 8 && now <= 14) && (day !== 6 || day !== 7)) {
+        callNow.style.display = 'none'
+        teamNumbers.forEach(num => {
+          num.style.display = 'none'
+          num.classList.remove('d-inline-flex')
+        })
+    }
+</script>

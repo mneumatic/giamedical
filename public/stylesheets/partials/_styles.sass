@@ -1,0 +1,160 @@
+@import '../modules/breakpoints'
+@import '../modules/variables'
+
+.navbar
+  .nav-link
+    background-color: $paolo-veronese-green
+    border-radius: 50%
+    display: flex
+    align-items: center
+    padding: .5rem
+
+    &:hover
+      color: $paolo-veronese-green !important
+
+.hero
+  background-image: url("/images/hero-img.webp")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #fff
+  padding: calc(5rem + 64px) 0
+
+  @include media-breakpoint-up(large)
+    padding: 17vw 0
+
+  button
+    margin-top: 1rem
+
+#team
+  img
+    max-height: 168px
+    max-width: 145px
+
+#to-top-btn
+  display: flex
+  align-items: center
+  padding: .75rem
+  position: fixed
+  bottom: 2rem
+  right: 1rem
+  transition: transform .5s ease-in-out
+  transform: translateX(200px)
+  z-index: 9
+
+button
+  background-color: $paolo-veronese-green !important
+  border-radius: 0 !important
+  color: #fff !important
+
+form input,
+form select,
+form textarea
+  border-radius: 0 !important
+
+form textarea
+  resize: vertical !important
+
+.show-x
+  transform: translateX(0) !important
+
+.text-green
+  color: $paolo-veronese-green
+
+
+.bg-green
+  background-color: $paolo-veronese-green
+
+.bg-black-coral
+  background-color: $black-coral
+
+.styled-list
+  counter-reset: gia-counter
+  list-style: none
+  padding-left: 40px
+
+  li
+    counter-increment: gia-counter
+    position: relative
+    padding: 1rem 0
+
+    &::before
+      content: counter(gia-counter)
+      background-color: $paolo-veronese-green
+      border-radius: 50%
+      color: #fff
+      position: absolute
+      --size: 32px
+      left: calc(-1 * var(--size) - 10px)
+      line-height: var(--size)
+      width: var(--size)
+      height: var(--size)
+      text-align: center
+      font-weight: bold
+
+ul
+  list-style: none
+  padding-left: 40px
+
+  li
+    display: flex
+    align-items: center
+    position: relative
+    padding: 1rem 0
+
+    &::before
+      content: '⋅'
+      font-size: 3em
+      position: absolute
+      --size: 32px
+      left: calc(-1 * var(--size) - 10px)
+      top: -13px
+      color: $paolo-veronese-green
+
+meter
+  background: whiteSmoke none
+  border: 0
+  width: 100%
+  -moz-appearance: none
+
+meter::-webkit-meter-inner-element
+  background: white
+
+meter::-webkit-meter-bar
+  background: whiteSmoke none
+  border: 0
+  border-radius: 0
+  height: 18px
+
+meter::-webkit-meter-optimum-value
+  background-image: linear-gradient($paolo-veronese-green, $paolo-veronese-green)
+
+meter::-moz-meter-bar
+  background-image: linear-gradient($paolo-veronese-green, $paolo-veronese-green)
+
+.already-visible
+  opacity: 1 !important
+  transform: translateY(0) !important
+  animation: none !important
+
+.module
+  opacity: 0
+  transform: translateY(150px)
+
+.come-in
+  animation: come-in 0.8s ease forwards
+
+.come-in:nth-child(odd)
+  animation-duration: 0.6s /* So they look staggered */
+
+
+@keyframes come-in
+  to
+    opacity: 1
+    transform: translateY(0)

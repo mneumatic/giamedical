@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <%- include('partials/meta.ejs') %>
+  <body>
+    <%- include('partials/navbar.ejs') %>
+
+    <main value="<%= sent %>">
+      <% if (sent === 'error') { %>
+        <div class="alert-danger position-absolute py-2 w-100 text-center" style="top: 75px">
+          <span>Oops something went wrong. Please try again later. Thank you.</span>
+        </div>
+      <% } %>
+
+      <section class="hero">
+        <div class="container">
+          <h1 class="display-1 m-0 text-white">GIA MEDICAL</h1>
+          <span class="display-5">Dialysis Solutions for Less</span>
+          <hr>
+          <p class="lead">GIA Medical is the industry leader providing reliable, high-quality, and cost-effective Hemodialysis equipment. Doing more with less has become customary in an ever-expanding healthcare environment where access to costly treatment modalities, such as dialysis, is vital. We pride ourselves in developing repair and rebuild processes that aid increased access to cost-effective Hemodialysis equipment for healthcare providers worldwide.</p>
+          <button class="btn btn-lg shadow">Discover</button>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container py-5 mt-lg-5">
+          <div class="row col-12 m-0">
+            <div class="col-lg-6 module">
+              <span class="text-green">About GIA Medical</span>
+              <h2>We Offer</h2>
+              <p>GIA Medical is a California State Board of Pharmacy Licensed Biomedical Engineering Company that specializes in the repair and service of all brands of Hemodialysis, Plasmapheresis, Apheresis, and Reverse Osmosis equipment.</p>
+              <p>GIA Medical was founded in the early ’90s by Gia Ben-Hur and a small group of dedicated Biomedical Engineers with a shared vision of developing a comprehensive Deport Level Repair Program for Fresenius 2008 Series hemodialysis equipment. Today, we are the largest supplier of high-quality refurbished Hemodialysis, Plasmapheresis, Apheresis and Reverse Osmosis equipment in the industry.</p>
+              <span class="fw-bold text-black">Gia Ben-Hur - Founder</span>
+            </div>
+            <div class="col-lg-6 module pt-2 pt-lg-0">
+              <picture>
+                <source srcset="/images/gia-ben-hur.webp" type="image/webp">
+                <img class="img-fluid" src="/images/gia-ben-hur.jpg" loading="lazy" alt="Gia Ben-Hur">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="discover">
+        <div class="container d-flex flex-column flex-lg-row">
+          <div class="module pb-2 pb-lg-0 mx-1">
+            <svg class="img-fluid mb-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32"><g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="dlr-square" transform="translate(0.000000, 0.000000)"><path id="Path" fill="rgba(15, 191, 151, 1)" fill-rule="nonzero" d="M10,0 L22,0 C24.1221844,0 27.4555177,0 32,0 C32,5.10695271 32,8.44028604 32,10 L32,22 C32,23.7533822 32,27.0867155 32,32 C27.2618495,32 23.9285162,32 22,32 L10,32 C8.05171082,32 4.71837749,32 0,32 C0,27.0669425 0,23.7336092 0,22 L0,10 C0,8.04105042 0,4.70771709 0,0 C4.94371791,0 8.27705125,0 10,0 Z"/><g id="Group" transform="translate(12.000000, 6.000000)"><path id="Path" stroke="#FFF" d="M.721547982 2.77350035 6.70615391 2.78525969 6.71845202 6.77152741.733846091 6.75976807z"/><path id="Path" stroke="#FFF" d="M.73 8.235 6.73 8.235 6.73 18.235.73 18.235z"/><path id="Path" fill="#FFF" fill-rule="nonzero" d="M0 19.172028 7.5 19.172028 7.5 20.172028 0 20.172028z" transform="translate(3.750000, 19.672028) scale(-1, 1) rotate(-180.000000) translate(-3.750000, -19.672028)"/><path id="Path" fill="#FFF" fill-rule="nonzero" d="M7.725 0 8.725 0 8.725 13.621 7.725 13.621z"/><path id="Path" stroke="#FFF" d="M2.25 9.669 5.25 9.669 5.25 11.669 2.25 11.669z"/></g></g></g></svg>
+            <h3>Depot Level Repair</h3>
+            <p class="text-start">The goal of the DLR program is to minimize your equipment investment while maximizing quality and reliability. The DLR program is eligible for current Fresenius hemodialysis machines. Qualified Fresenius machines undergo a complete rework that brings back factory new performance.</p>
+          </div>
+          <div class="module mx-1">
+            <svg class="img-fluid mb-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32"><g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="bps-square" transform="translate(-0.000000, -0.000000)"><path id="Path" fill="rgba(15, 191, 151, 1)" fill-rule="nonzero" d="M10,0 L22,0 C23.8505562,0 27.1838895,0 32,0 C32,4.8353245 32,8.16865784 32,10 L32,22 C32,23.5020382 32,26.8353716 32,32 C27.5131934,32 24.1798601,32 22,32 L10,32 C8.00356063,32 4.6702273,32 0,32 C0,27.0187923 0,23.685459 0,22 L0,10 C0,8.19718109 0,4.86384776 0,0 C4.78758724,0 8.12092058,0 10,0 Z"/><g id="Group" transform="translate(6.000000, 5.000000)"><path id="Shape" fill="#FFF" fill-rule="nonzero" d="M2.34356689,8.68731677 C2.34356689,5.03725924 5.28953983,2.07830298 8.92358161,2.07830298 C12.5576234,2.07830298 15.5035963,5.03725924 15.5035963,8.68731677 C15.5035963,9.11155743 15.7933886,9.95635541 15.3877496,9.92846951 C15.3877496,9.92846951 13.0133685,9.1490186 12.4409677,9.92846951 C11.242796,11.5600469 9.49501447,15.2963306 8.92358161,15.2963306 C5.28953983,15.2963306 2.34356689,12.3373743 2.34356689,8.68731677 Z M8.51233069,2.96804146 C7.96125446,3.13657131 7.41429074,3.64546537 6.96026972,4.50050653 C6.81068319,4.78477301 6.68202868,5.07966313 6.57533886,5.38280988 L8.51233069,5.38280988 L8.51233069,2.96804146 Z M5.70759942,5.38280988 C5.8446877,4.94398568 6.02086718,4.51846196 6.23400059,4.11140085 C6.3762172,3.84130316 6.54045617,3.58349698 6.72503419,3.34062461 C5.70595715,3.76511066 4.82917231,4.47375786 4.19830854,5.38280988 L5.70759942,5.38280988 Z M5.22890334,8.27425341 C5.2535784,7.54974027 5.3424086,6.8549677 5.48552392,6.2089366 L3.72043497,6.2089366 C3.41373891,6.85748765 3.23072836,7.55801014 3.18087376,8.27425341 L5.22890334,8.27425341 L5.22890334,8.27425341 Z M6.33023331,6.2089366 C6.16845948,6.88619759 6.07531671,7.5781596 6.05222769,8.27425341 L8.51233069,8.27425341 L8.51233069,6.2089366 L6.33023331,6.2089366 Z M9.33483253,6.2089366 L9.33483253,8.27425341 L11.794113,8.27425341 C11.7713218,7.57818541 11.6784543,6.88622094 11.5169299,6.2089366 L9.33483253,6.2089366 Z M6.05305019,9.10038013 C6.07586947,9.79644577 6.16873662,10.4884074 6.33023331,11.1656969 L8.51233069,11.1656969 L8.51233069,9.10038013 L6.05305019,9.10038013 Z M9.33483253,9.10038013 L9.33483253,11.1656969 L11.5169299,11.1656969 C11.6707378,10.53371 11.7686155,9.83728517 11.7949355,9.10038013 L9.33483253,9.10038013 Z M6.57533886,11.9918237 C6.68884411,12.3107086 6.8179769,12.6064619 6.96026972,12.874127 C7.41429074,13.7291682 7.96207696,14.2372361 8.51233069,14.4065921 L8.51233069,11.9918237 L6.57533886,11.9918237 Z M6.72503419,14.0340089 C6.54044381,13.7911453 6.37620417,13.533338 6.23400059,13.2632327 C6.02087122,12.8561697 5.84469189,12.4306463 5.70759942,11.9918237 L4.19830854,11.9918237 C4.8291384,12.9009075 5.70593348,13.609563 6.72503419,14.0340089 L6.72503419,14.0340089 Z M5.48552392,11.1656969 C5.33678651,10.4866743 5.25088061,9.79529213 5.22890334,9.10038013 L3.18087376,9.10038013 C3.23186888,9.83563292 3.4202218,10.5320577 3.72043497,11.1656969 L5.48552392,11.1656969 Z M9.33483253,11.9918237 L9.33483253,14.4065921 C9.88590877,14.2380622 10.4328725,13.7291682 10.8868935,12.874127 C11.0291863,12.6064619 11.1583191,12.3107086 11.2718244,11.9918237 L9.33483253,11.9918237 Z M14.6662895,8.27425341 C14.6164156,7.55801332 14.433406,6.85749437 14.1267283,6.2089366 L12.3616393,6.2089366 C12.5047546,6.8549677 12.5935848,7.54974027 12.6182599,8.27425341 L14.6662895,8.27425341 Z M11.6131626,4.11140085 C11.8163206,4.49472365 11.9931585,4.92100504 12.1395638,5.38280988 L13.6488547,5.38280988 C13.0180248,4.47372606 12.1412297,3.76507058 11.122129,3.34062461 C11.3014344,3.5752446 11.4659348,3.83464839 11.6131626,4.11140085 L11.6131626,4.11140085 Z M11.2718244,5.38280988 C11.1651455,5.07965877 11.0364907,4.78476786 10.8868935,4.50050653 C10.4328725,3.64546537 9.88590877,3.13739744 9.33483253,2.96804146 L9.33483253,5.38280988 L11.2718244,5.38280988 Z"/><g transform="translate(9.288999, 9.221043)"><path id="Shape" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.199" d="M5.85404842,11.7789566 L5.85404842,8.24811362 M5.85404842,11.7789566 L4.09637326,10.0135351 M5.85404842,11.7789566 L7.61172359,10.0135351"/><path id="Path" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.199" d="M1.77272669,3.60917442 C0.62616521,3.89895922 -0.126231397,5.00080482 0.0175750145,6.17950253 C0.161381426,7.35820025 1.15639807,8.24497032 2.33869809,8.24811362 L2.92458981,8.24811362"/><path id="Shape" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.199" d="M8.09801372,2.44458471 C7.68245178,0.791783439 6.06176574,-0.253954365 4.39239846,0.0535590059 C2.72303118,0.361072377 1.57729284,1.91641193 1.77272669,3.60976289 M8.78350703,8.24811362 C9.91246035,8.2473415 10.9405076,7.59504506 11.4261162,6.57137701 C11.9117247,5.54770896 11.768467,4.33485942 11.0578704,3.45373124 C10.3472737,2.57260306 9.19580844,2.18001743 8.09801372,2.44458471"/><path id="Shape" fill="#FFF" fill-rule="nonzero" d="M3.97173043,6.47721056 C4.3005023,6.47721056 4.56391591,6.39067679 4.76197125,6.21760925 C4.9600266,6.04454171 5.07357833,5.80350704 5.10262644,5.49450523 L5.10262644,5.49450523 L4.60352698,5.49450523 C4.5771196,5.70139056 4.51440207,5.84926053 4.4153744,5.93811513 C4.31634673,6.02696972 4.1684654,6.07139702 3.97173043,6.07139702 C3.75651028,6.07139702 3.59311462,5.98917336 3.48154345,5.82472605 C3.36997227,5.66027873 3.31418668,5.42156489 3.31418668,5.10858452 L3.31418668,5.10858452 L3.31418668,4.85196714 C3.31682742,4.54296533 3.37657411,4.3085616 3.49342677,4.14875594 C3.61027942,3.98895028 3.77763619,3.90904745 3.99549707,3.90904745 C4.18298946,3.90904745 4.32525922,3.95513249 4.42230633,4.04730256 C4.51935345,4.13947262 4.57976033,4.28966342 4.60352698,4.49787494 L4.60352698,4.49787494 L5.10262644,4.49787494 C5.07093759,4.180916 4.95804604,3.93557121 4.7639518,3.76184058 C4.56985757,3.58810995 4.31370599,3.50124464 3.99549707,3.50124464 C3.75915102,3.50124464 3.55086282,3.55760763 3.37063245,3.67033361 C3.19040209,3.78305959 3.05209344,3.94352834 2.95570651,4.15173986 C2.85931957,4.35995138 2.81112611,4.60065451 2.81112611,4.87384924 L2.81112611,4.87384924 L2.81112611,5.1443916 C2.81508721,5.41095539 2.86460105,5.64502757 2.95966761,5.84660815 C3.05473418,6.04818873 3.18974191,6.20368428 3.36469079,6.31309479 C3.53963968,6.4225053 3.74198623,6.47721056 3.97173043,6.47721056 Z M6.76750608,6.47721056 C7.00385212,6.47721056 7.21280051,6.41985292 7.39435125,6.30513766 C7.57590198,6.1904224 7.715531,6.02597508 7.8132383,5.81179572 C7.9109456,5.59761635 7.95979925,5.34862455 7.95979925,5.06482031 L7.95979925,5.06482031 L7.95979925,4.90368847 C7.95847889,4.62121042 7.90830486,4.37354481 7.80927719,4.16069163 C7.71024952,3.94783845 7.56996032,3.78471733 7.38840958,3.67132825 C7.20685885,3.55793918 6.99857065,3.50124464 6.76354497,3.50124464 C6.5285193,3.50124464 6.32023109,3.55860227 6.13868036,3.67331753 C5.95712963,3.7880328 5.81651033,3.95347475 5.71682248,4.1696434 C5.61713462,4.38581205 5.56729069,4.6351354 5.56729069,4.91761344 L5.56729069,4.91761344 L5.56729069,5.08073457 C5.56861106,5.35790787 5.61911517,5.60258956 5.71880303,5.81477964 C5.81849089,6.02696972 5.95977036,6.1904224 6.14264147,6.30513766 C6.32551257,6.41985292 6.53380077,6.47721056 6.76750608,6.47721056 Z M6.76750608,6.06343989 C6.54832483,6.06343989 6.37700696,5.97657458 6.25355246,5.80284395 C6.13009796,5.62911332 6.06837071,5.38310544 6.06837071,5.06482031 L6.06837071,5.06482031 L6.06837071,4.89772062 C6.07101145,4.58606644 6.13339888,4.34503177 6.25553301,4.17461661 C6.37766714,4.00420144 6.54700446,3.91899386 6.76354497,3.91899386 C6.98536696,3.91899386 7.15668483,4.00453299 7.27749859,4.17561125 C7.39831235,4.3466895 7.45871923,4.59269738 7.45871923,4.91363488 L7.45871923,4.91363488 L7.45871923,5.06482031 C7.45871923,5.39106257 7.39897254,5.63905973 7.27947915,5.80881179 C7.15998575,5.97856386 6.98932807,6.06343989 6.76750608,6.06343989 Z"/><path id="Path" fill="#FFF" fill-rule="nonzero" d="M9.53840598,6.98063153 L9.53840598,6.74050308 L8.70534119,6.74050308 L9.14405578,6.26891062 C9.25907459,6.14348271 9.34184705,6.03146403 9.39237317,5.93285458 C9.44289929,5.83424513 9.46816235,5.7399679 9.46816235,5.65002288 C9.46816235,5.49488835 9.41784162,5.37338006 9.31720017,5.285498 C9.21655871,5.19761594 9.07915231,5.15367491 8.90498098,5.15367491 C8.78421123,5.15367491 8.67761344,5.17801783 8.58518761,5.22670366 C8.49276179,5.2753895 8.42169659,5.34367345 8.37199204,5.43155551 C8.32228748,5.51943757 8.2974352,5.61825331 8.2974352,5.72800274 L8.2974352,5.72800274 L8.59689488,5.72800274 C8.59689488,5.62485478 8.62359568,5.54357419 8.67699727,5.48416097 C8.73039886,5.42474774 8.80557186,5.39504113 8.90251629,5.39504113 C8.98385102,5.39504113 9.0485491,5.42144701 9.09661053,5.47425876 C9.14467196,5.52707052 9.16870267,5.59638594 9.16870267,5.68220504 C9.16870267,5.74739455 9.1504229,5.81237777 9.11386335,5.87715468 C9.0773038,5.9419316 9.01589197,6.0225933 8.92962786,6.11913979 L8.92962786,6.11913979 L8.33194085,6.77392302 L8.33194085,6.98063153 L9.53840598,6.98063153 Z"/></g><path id="Shape" fill="#FFF" fill-rule="nonzero" d="M8.00126776,16.800877 C8.1996356,16.8183085 8.34637556,16.993957 8.32902062,17.1931991 C8.31166568,17.3924412 8.13678781,17.5398279 7.93841997,17.5223964 C7.74005212,17.504965 7.59331217,17.3293164 7.61066711,17.1300744 C7.62802205,16.9308323 7.80289991,16.7834456 8.00126776,16.800877 Z M6.95232192,16.6404217 L7.02492017,16.6483993 C7.21969437,16.6899823 7.3440283,16.8822835 7.30262776,17.0779161 C7.26122723,17.2735487 7.06976977,17.3984306 6.87499557,17.3568476 C6.68022136,17.3152646 6.55588744,17.1229634 6.59728797,16.9273308 C6.63868851,16.7316982 6.83014596,16.6068163 7.02492017,16.6483993 L6.95232192,16.6404217 Z M5.61635168,16.6010304 C5.68118063,16.4119237 5.88636348,16.3114083 6.07464041,16.376523 C6.26291735,16.4416377 6.36299171,16.6477248 6.29816276,16.8368315 C6.23333382,17.0259382 6.02815096,17.1264536 5.83987403,17.0613389 C5.6515971,16.9962243 5.55152273,16.7901371 5.61635168,16.6010304 Z M4.68273118,16.1561091 C4.77002209,15.9763474 4.98587154,15.901697 5.16484442,15.9893726 C5.34381731,16.0770482 5.41814023,16.2938489 5.33084932,16.4736105 C5.24355842,16.6533722 5.02770897,16.7280227 4.84873608,16.6403471 C4.6697632,16.5526714 4.59544027,16.3358707 4.68273118,16.1561091 Z M3.81405661,15.5940304 C3.92540622,15.4282203 4.14949879,15.3844692 4.31458138,15.4963095 C4.47966396,15.6081498 4.52322314,15.83323 4.41187354,15.9990402 C4.30052393,16.1648503 4.07643135,16.2086014 3.91134877,16.0967611 C3.74626618,15.9849207 3.702707,15.7598406 3.81405661,15.5940304 Z M3.01722156,14.9342309 C3.1478597,14.7832867 3.37559044,14.767292 3.52587242,14.8985059 C3.67615441,15.0297197 3.69207889,15.2584541 3.56144076,15.4093984 C3.43080262,15.5603427 3.20307188,15.5763374 3.0527899,15.4451235 C2.90250792,15.3139096 2.88658343,15.0851752 3.01722156,14.9342309 Z M2.30711976,14.1810473 C2.4550989,14.0472191 2.68307289,14.0592193 2.8163139,14.2078507 C2.94955492,14.356482 2.93760731,14.5854607 2.78962817,14.7192889 C2.64164903,14.8531171 2.41367504,14.8411169 2.28043403,14.6924856 C2.14719301,14.5438542 2.15914062,14.3148755 2.30711976,14.1810473 Z M1.69452338,13.3458891 C1.8576375,13.231172 2.08245615,13.2709883 2.19666989,13.4348213 C2.31088363,13.5986543 2.27124204,13.8244638 2.10812791,13.9391809 C1.94501379,14.0538979 1.72019514,14.0140816 1.6059814,13.8502487 C1.49176766,13.6864157 1.53140925,13.4606062 1.69452338,13.3458891 Z M1.1887274,12.4414096 C1.36454485,12.3475138 1.58285665,12.4145525 1.67634044,12.5911448 C1.76982424,12.7677371 1.70307963,12.9870111 1.52726218,13.0809069 C1.35144473,13.1748027 1.13313293,13.1077639 1.03964914,12.9311716 C0.946165341,12.7545793 1.01290995,12.5353054 1.1887274,12.4414096 Z M0.797408627,11.4813139 C0.983308368,11.4096391 1.19185878,11.502901 1.263219,11.68962 C1.33457923,11.876339 1.2417266,12.0858086 1.05582686,12.1574833 C0.86992712,12.229158 0.661376711,12.1358962 0.590016486,11.9491771 C0.518656261,11.7624581 0.611508886,11.5529886 0.797408627,11.4813139 Z M0.526509105,10.4801515 C0.719719802,10.4317663 0.915399819,10.5498609 0.963572656,10.7439231 C1.01174549,10.9379853 0.894169077,11.1345277 0.70095838,11.1829129 C0.507747684,11.231298 0.312067667,11.1132034 0.26389483,10.9191412 C0.215721992,10.725079 0.333298409,10.5285366 0.526509105,10.4801515 Z M0.380145949,9.45309563 C0.577787275,9.42872138 0.757679762,9.56988821 0.781947065,9.76840057 C0.806214369,9.96691293 0.665666954,10.1475982 0.468025629,10.1719725 C0.270384303,10.1963467 0.0904918159,10.0551799 0.0662245126,9.85666754 C0.0419572092,9.65815519 0.182504624,9.47746989 0.380145949,9.45309563 Z M0.360548752,8.41571346 C0.559674329,8.41571346 0.721097504,8.57784805 0.721097504,8.77785121 C0.721097504,8.97785436 0.559674329,9.13998895 0.360548752,9.13998895 C0.161423175,9.13998895 0,8.97785436 0,8.77785121 C0,8.57784805 0.161423175,8.41571346 0.360548752,8.41571346 Z M0.395011398,7.38213801 L0.468025629,7.38372994 C0.665666954,7.40810419 0.806214369,7.58878949 0.781947065,7.78730185 C0.757679762,7.98581421 0.577787275,8.12698103 0.380145949,8.10260678 C0.182504624,8.07823253 0.0419572092,7.89754723 0.0662245126,7.69903487 C0.0904918159,7.50052251 0.270384303,7.35935568 0.468025629,7.38372994 L0.395011398,7.38213801 Z M16.9145374,6.87525068 C17.1100045,6.83708828 17.2992628,6.96530726 17.3372578,7.16163579 C17.3752527,7.35796432 17.2475964,7.54805678 17.0521293,7.58621918 C16.8566622,7.62438158 16.6674038,7.4961626 16.6294089,7.29983407 C16.5914139,7.10350554 16.7190703,6.91341308 16.9145374,6.87525068 Z M0.628681543,6.36227207 L0.70095838,6.37278954 C0.894169077,6.42117469 1.01174549,6.61771709 0.963572656,6.8117793 C0.915399819,7.0058415 0.719719802,7.12393609 0.526509105,7.07555095 C0.333298409,7.02716581 0.215721992,6.8306234 0.26389483,6.6365612 C0.312067667,6.44249899 0.507747684,6.3244044 0.70095838,6.37278954 L0.628681543,6.36227207 Z M16.6201742,5.88098242 C16.8095539,5.81917805 17.0129589,5.92327486 17.0744921,6.11348916 C17.1360253,6.30370346 17.0323852,6.50800496 16.8430056,6.56980934 C16.6536259,6.63161371 16.4502208,6.5275169 16.3886876,6.33730259 C16.3271544,6.14708829 16.4307945,5.94278679 16.6201742,5.88098242 Z M0.590016486,5.60652529 C0.661376711,5.41980626 0.86992712,5.32654442 1.05582686,5.39821914 C1.2417266,5.46989386 1.33457923,5.67936338 1.263219,5.86608241 C1.19185878,6.05280143 0.983308368,6.14606327 0.797408627,6.07438855 C0.611508886,6.00271383 0.518656261,5.79324431 0.590016486,5.60652529 Z M16.2063777,4.93054119 C16.3868468,4.84601621 16.6013662,4.92443901 16.6855203,5.10570342 C16.7696744,5.28696784 16.6915958,5.50243272 16.5111267,5.5869577 C16.3306576,5.67148269 16.1161382,5.59305988 16.0319841,5.41179547 C15.94783,5.23053105 16.0259087,5.01506617 16.2063777,4.93054119 Z M1.03964914,4.62453083 C1.13313293,4.44793853 1.35144473,4.38089976 1.52726218,4.47479556 C1.70307963,4.56869135 1.76982424,4.78796527 1.67634044,4.96455757 C1.58285665,5.14114988 1.36454485,5.20818864 1.1887274,5.11429285 C1.01290995,5.02039706 0.946165341,4.80112313 1.03964914,4.62453083 Z M15.6794104,4.03833879 C15.8482785,3.93235326 16.0707143,3.98393295 16.1762348,4.15354524 C16.2817553,4.32315753 16.2304019,4.54657371 16.0615339,4.65255923 C15.8926658,4.75854475 15.6702299,4.70696507 15.5647095,4.53735277 C15.459189,4.36774048 15.5105423,4.14432431 15.6794104,4.03833879 Z M1.6059814,3.70545376 C1.72019514,3.54162077 1.94501379,3.50180447 2.10812791,3.61652156 C2.27124204,3.73123866 2.31088363,3.95704812 2.19666989,4.12088111 C2.08245615,4.2847141 1.8576375,4.3245304 1.69452338,4.2098133 C1.53140925,4.09509621 1.49176766,3.86928675 1.6059814,3.70545376 Z M15.0472509,3.21790539 C15.2020005,3.09203932 15.4290368,3.11600696 15.5543505,3.2714386 C15.6796643,3.42687025 15.6558019,3.65490709 15.5010522,3.78077315 C15.3463026,3.90663922 15.1192663,3.88267158 14.9939525,3.72723994 C14.8686387,3.57180829 14.8925012,3.34377145 15.0472509,3.21790539 Z M2.28043403,2.86321686 C2.41367504,2.71458556 2.64164903,2.70258529 2.78962817,2.83641352 C2.93760731,2.97024175 2.94955492,3.19922045 2.8163139,3.34785176 C2.68307289,3.49648307 2.4550989,3.50848333 2.30711976,3.3746551 C2.15914062,3.24082687 2.14719301,3.01184817 2.28043403,2.86321686 Z M14.3194729,2.48168438 C14.4577972,2.33781415 14.6860492,2.33381244 14.8292882,2.4727463 C14.9725271,2.61168016 14.9765113,2.84093818 14.838187,2.98480841 C14.6998628,3.12867863 14.4716107,3.13268035 14.3283718,2.99374648 C14.1851328,2.85481262 14.1811487,2.62555461 14.3194729,2.48168438 Z M3.0527899,2.11057891 C3.20307188,1.97936503 3.43080262,1.9953597 3.56144076,2.14630399 C3.69207889,2.29724829 3.67615441,2.52598268 3.52587242,2.65719655 C3.37559044,2.78841043 3.1478597,2.77241576 3.01722156,2.62147147 C2.88658343,2.47052717 2.90250792,2.24179278 3.0527899,2.11057891 Z M13.5071008,1.84084363 C13.6269376,1.68111401 13.8530027,1.6492026 14.0120315,1.7695675 C14.1710603,1.8899324 14.2028316,2.11699388 14.0829949,2.2767235 C13.9631581,2.43645311 13.7370929,2.46836452 13.5780642,2.34799962 C13.4190354,2.22763472 13.387264,2.00057325 13.5071008,1.84084363 Z M3.91134877,1.45894132 C4.07643135,1.34710098 4.30052393,1.39085214 4.41187354,1.55666226 C4.52322314,1.72247239 4.47966396,1.94755257 4.31458138,2.05939291 C4.14949879,2.17123326 3.92540622,2.1274821 3.81405661,1.96167197 C3.702707,1.79586185 3.74626618,1.57078167 3.91134877,1.45894132 Z M12.6224421,1.30510608 C12.7220049,1.13189827 12.942513,1.07255289 13.1149609,1.17255446 C13.2874087,1.27255604 13.3464936,1.49403601 13.2469309,1.66724382 C13.1473681,1.84045163 12.9268599,1.89979701 12.7544121,1.79979543 C12.5819643,1.69979386 12.5228793,1.47831389 12.6224421,1.30510608 Z M4.84873608,0.915355357 C5.02770897,0.827679745 5.24355842,0.902330223 5.33084932,1.08209187 C5.41814023,1.26185351 5.34381731,1.47865424 5.16484442,1.56632985 C4.98587154,1.65400546 4.77002209,1.57935498 4.68273118,1.39959334 C4.59544027,1.2198317 4.6697632,1.00303097 4.84873608,0.915355357 Z M11.6789012,0.882602225 C11.7567058,0.698498352 11.9683696,0.612603707 12.1516657,0.690751164 C12.3349618,0.768898622 12.4204795,0.98149533 12.3426749,1.1655992 C12.2648704,1.34970307 12.0532065,1.43559772 11.8699105,1.35745026 C11.6866144,1.27930281 11.6010966,1.0667061 11.6789012,0.882602225 Z M5.83987403,0.494363493 C6.02815096,0.429248836 6.23333382,0.529764243 6.29816276,0.718870939 C6.36299171,0.907977635 6.26291735,1.11406476 6.07464041,1.17917942 C5.88636348,1.24429407 5.68118063,1.14377867 5.61635168,0.954671972 C5.55152273,0.765565276 5.6515971,0.55947815 5.83987403,0.494363493 Z M11.0648713,0.318411686 L11.1367387,0.331456293 C11.3281505,0.386584633 11.4388261,0.587128753 11.3839397,0.779384122 C11.3290532,0.971639492 11.1293891,1.08280291 10.9379773,1.02767457 C10.7465655,0.972546233 10.6358898,0.772002112 10.6907763,0.579746743 C10.7456627,0.387491374 10.9453269,0.276327953 11.1367387,0.331456293 L11.0648713,0.318411686 Z M6.87499557,0.198854818 C7.06976977,0.157271825 7.26122723,0.282153708 7.30262776,0.477786312 C7.3440283,0.673418915 7.21969437,0.865720152 7.02492017,0.907303145 C6.83014596,0.948886139 6.63868851,0.824004256 6.59728797,0.628371652 C6.55588744,0.432739049 6.68022136,0.240437812 6.87499557,0.198854818 Z M10.0126402,0.0959623375 L10.0855547,0.100112684 C10.2822287,0.13140007 10.4164123,0.316901952 10.3852622,0.514442733 C10.3541121,0.711983515 10.1694242,0.846758521 9.97275018,0.815471135 C9.77607617,0.784183749 9.64189253,0.598681867 9.67304263,0.401141085 C9.70419274,0.203600304 9.88888067,0.0688252977 10.0855547,0.100112684 L10.0126402,0.0959623375 Z M7.93841997,0.0333059729 C8.13678781,0.0158745497 8.31166568,0.163261208 8.32902062,0.362503288 C8.34637556,0.561745368 8.1996356,0.737393947 8.00126776,0.75482537 C7.80289991,0.772256793 7.62802205,0.624870135 7.61066711,0.425628055 C7.59331217,0.226385976 7.74005212,0.0507373962 7.93841997,0.0333059729 Z M9.01403774,0.000224866426 C9.21304202,0.00720487578 9.36873327,0.174899113 9.36178389,0.374780429 C9.35483451,0.574661745 9.18787608,0.731039151 8.98887181,0.724059141 C8.78986753,0.717079132 8.63417628,0.549384895 8.64112566,0.349503579 C8.64807504,0.149622263 8.81503347,-0.00675514293 9.01403774,0.000224866426 Z"/><path id="Path" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" d="M16.0444195 7.69143798 17.0058828 8.59678234 17.9673461 7.69143798"/></g></g></g></svg>
+            <h3>By-Product Synergy</h3>
+            <p class="text-start">Reducing our carbon footprint is very important to us! We strive to refine our recycling processes to lessen the amount of waste we produce. Each serviceable component is passed through a stringent quality assurance and quality control process and must meet our <abbr title="Original Equipment Manufacture">OEM</abbr> guidelines.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="pt-5">
+          <div class="row col-12 m-0">
+            <div class="col-lg-6 module p-0">
+              <picture>
+                <source srcset="/images/hydraulic-chassis.webp" type="image/webp">
+                <img class="img-fluid" src="/images/hydraulic-chassis.jpg" loading="lazy" alt="Hydraulic Chassis">
+              </picture>
+            </div>
+            <div class="col-lg-6 module d-flex flex-column justify-content-evenly p-5">
+              <div>
+                <span class="text-green">Our Mission</span>
+                <h3 class="mt-0">Complete biomedical engineering repair</h3>
+              </div>
+              <ol class="styled-list">
+                <li>
+                  GIA Medical believes in performing biomedical engineering repair right the first time. We understand the challenging financial climate and businesses doing more with less.
+                  <span class="fw-bold text-black">Our <abbr title="Depot Level Repair">DLR</abbr> and Replacement Spare Parts Programs take advantage of over thirty years of experience in the industry.</span>
+                </li>
+                <li>We maintain our strict <abbr title="Original Equipment Manufacturer">OEM</abbr> service guidelines and employ a set of stringent checks every step of the way throughout the refurbishing process. These guidelines ensure that each order is serviced and processed accordingly to <abbr title="Original Equipment Manufacturer">OEM</abbr> guidelines. All operational equipment must meet and pass stringent in-house & OEM-specific testing models.</li>
+                <li class="fw-bold text-black">We pride ourselves in cutting cost not reliability!</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row col-12 flex-column-reverse flex-lg-row m-0">
+            <div class="col-lg-6 module d-flex flex-column justify-content-evenly p-5">
+              <div>
+                <span class="text-green">Why GIA Medical? <span class="ps-2 text-black-50">#Expertise #Quality</span></span>
+                <h3 class="mt-0">Engineering, Servicing, and More</h3>
+              </div>
+              <p>Our in-house engineering team is continuously refining industry-standard processes. We feel that it is necessary to continue developing new standards that improve our processes, thus, <span class="text-black fw-bold">allowing us to pass on the savings to you!</span></p>
+              <label class="text-black fw-bold">Processes:
+                <meter min="0" max="100" low="33" high="66" optimum="80" value="90">at 90/100</meter>
+              </label>
+              <label class="text-black fw-bold">By-Product Synergy:
+                <meter min="0" max="100" low="33" high="66" optimum="80" value="76">at 76/100</meter>
+              </label>
+              <label class="text-black fw-bold">Support:
+                <meter min="0" max="100" low="33" high="66" optimum="80" value="100">at 100/100</meter>
+              </label>
+            </div>
+            <div class="col-lg-6 module p-0">
+              <picture>
+                <source srcset="/images/tnc-dmachine.webp" type="image/webp">
+                <img class="img-fluid" src="/images/tnc-dmachine.jpg" loading="lazy" alt="Dialysis">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="brands">
+        <div class="container py-5">
+          <div class="module text-center pb-4">
+            <h2>Servicing the Industries Top Brands</h2>
+          </div>
+          <div class="d-flex flex-wrap justify-content-center">
+            <div class="card module border-0" style="max-width: 200px">
+              <picture>
+                <source srcset="/images/products/2008t.webp" type="image/webp">
+                <img class="card-img-top" loading="lazy" src="/images/products/2008t.jpg" alt="Product">
+              </picture>
+              <div class="card-body text-center">
+                <span>Fresenius</span>
+              </div>
+            </div>
+
+            <div class="card module border-0" style="max-width: 200px">
+              <picture>
+                <source srcset="/images/products/dialog-plus.webp" type="image/webp">
+                <img class="img-fluid" loading="lazy" src="/images/products/dialog-plus.jpg" alt="Product">
+              </picture>
+              <div class="card-body text-center">
+                <span>B.Braun</span>
+              </div>
+            </div>
+
+            <div class="card module border-0" style="max-width: 200px">
+              <picture>
+                <source srcset="/images/products/prismaflex.webp" type="image/webp">
+                <img class="img-fluid" loading="lazy" src="/images/products/prismaflex.jpg" alt="Product">
+              </picture>
+              <div class="card-body text-center">
+                <span>Baxter</span>
+              </div>
+            </div>
+
+            <div class="card module border-0" style="max-width: 200px">
+              <picture>
+                <source srcset="/images/products/mro3_4.webp" type="image/webp">
+                <img class="img-fluid" loading="lazy" src="/images/products/mro3_4.jpg" alt="Product">
+              </picture>
+              <div class="card-body text-center">
+                <span>AmeriWater</span>
+              </div>
+            </div>
+          </div>
+          <p class="display-5 text-black text-center module m-0">And More!</p>
+        </div>
+      </section>
+
+      <section id="team" class="bg-light">
+        <div class="container py-5">
+          <div class="module text-center pb-4">
+            <h2>Our Team of Consultants</h2>
+            <p>Meet our team of experts that are ready to help Monday - Friday 8am - 5pm (PT).</p>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-evenly">
+            <div class="card module bg-transparent border-0 text-center" style="max-width: 350px">
+              <picture>
+                <source srcset="/images/gia-avatar.webp" type="image/webp">
+                <img class="card-img-top rounded-0" src="/images/gia-avatar.jpg" loading="lazy" alt="Avatar">
+              </picture>
+              <div class="card-body">
+                <span class="d-block text-black fw-bold">GIA Ben-Hur</span>
+                <span>Founder</span>
+                <div>
+                  <a class="team-number d-inline-flex align-items-center bg-green p-1 shadow-sm" href="tel:+14143516262" title="1-(414)-351-6262"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
+                  <a class="d-inline-flex align-items-center bg-green p-1 shadow-sm" href="mailto:giamedical@giamedical.com" title="Email Me"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card module bg-transparent border-0 text-center" style="max-width: 350px">
+              <picture>
+                <source srcset="/images/ken-avatar.webp" type="image/webp">
+                <img class="card-img-top rounded-0" src="/images/ken-avatar.jpg" loading="lazy" alt="Avatar">
+              </picture>
+              <div class="card-body">
+                <span class="d-block text-black fw-bold">Ken Brana</span>
+                <span>Operations</span>
+                <div>
+                  <a class="team-number d-inline-flex align-items-center bg-green p-1 shadow-sm" href="tel:+19098632900;ext=206" title="Call 1-(909)-863-2900 ext 206"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
+                  <a class="d-inline-flex align-items-center bg-green p-1 shadow-sm" href="mailto:ken@giamedical.com" title="Email Me"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card module bg-transparent border-0 text-center" style="max-width: 350px">
+              <picture>
+                <source srcset="/images/shannon-avatar.webp" type="image/webp">
+                <img class="card-img-top rounded-0" src="/images/shannon-avatar.jpg" loading="lazy" alt="Avatar">
+              </picture>
+              <div class="card-body">
+                <span class="d-block text-black fw-bold">Shannon Houts</span>
+                <span>Inventory Control</span>
+                <div>
+                  <a class="team-number d-inline-flex align-items-center bg-green p-1 shadow-sm" href="tel:+19098632900;ext=202" title="Call 1-(909)-863-2900 ext 202"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
+                  <a class="d-inline-flex align-items-center bg-green p-1 shadow-sm" href="mailto:shannon@giamedical.com" title="Email Me"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container py-5">
+          <div class="row col-12 m-0">
+            <div class="col-lg-6 module">
+              <picture>
+                <source srcset="/images/dialysis-clinic.webp" type="image/webp">
+                <img class="img-fluid" src="/images/dialysis-clinic.jpg" loading="lazy" alt="Dialysis Clinic">
+              </picture>
+            </div>
+            <div class="col-lg-6 module pt-5 pt-lg-0">
+              <h2>We Deliver Quality & Reliability</h2>
+              <p>With over 30 years of industry experience, GIA Medical continues to deliver quality products at a fraction of the cost to you. Servicing the dialysis community with reliable medical equipment and support.</p>
+              <ul>
+                <li class="text-black fw-bold">DLR Program, After Sales Warranty, BMT Training, and more</li>
+                <li class="text-black fw-bold">Quality & Reliability that nobody can match</li>
+                <li class="text-black fw-bold">At a price nobody can beat!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-light">
+        <div class="container py-5">
+          <div class="row col-12 m-0">
+            <div class="col-lg-6 module">
+              <div>
+                <span class="text-green">Contact</span>
+                <h2>Contact Us</h2>
+                <span>Call us directly, we would love to hear from you.</span>
+                <p>We're open Monday through Friday from 8am to 4pm (PT).</p>
+                <a class="display-6 text-black text-decoration-none" href="tel:+18003428642" title="Call 1-(800)-342-8642">1-(800)-342-8642</a>
+                <p class="mt-3">For non-business hours, or any other inquiry contact us via email.</p>
+              </div>
+            </div>
+            <% if (sent === 'email') { %>
+              <div class="col-lg-6 d-flex justify-content-center module">
+                <div class="alert-success d-flex align-items-center justify-content-center p-5 w-100 text-center">
+                  <span>You message was successfully sent. Please allow up to 72 hours for a replay. Thank you.</span>
+                </div>
+              </div>
+            <% } else { %>
+              <div class="col-lg-6 module">
+                <form action="/contact" method="post">
+                  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label" aria-label="Email Address"></label>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email" required>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="name" class="form-label" aria-label="Name"></label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="subject" class="form-label" aria-label="Subject"></label>
+                    <select class="form-select text-muted-black" style="height: 43px" name="subject" id="subject" aria-label="Select Subject" required>
+                      <option value="" disabled selected hidden>Please Select</option>
+                      <option value="general">General</option>
+                      <option value="parts-ordering">Parts Ordering</option>
+                      <option value="support">Tech Support</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea type="text" class="form-control" name="message" id="message" rows="10"  placeholder="Message..." required></textarea>
+                    <div class="form-text">We'll never share your information with anyone else.</div>
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">I agree with the <a class="text-black" href="">privacy policy</a> and <a class="text-black" href="">terms of service.</a></label>
+                  </div>
+
+                  <div class="g-recaptcha mb-3" data-sitekey="6LfytJIaAAAAAKhyWI4saFSea0Ey4WgxDs3KJcYB"></div>
+
+                  <button id="form-btn" type="submit" class="btn d-block w-100 shadow-sm">Submit</button>
+                  <span class="form-text d-block text-center">Please allow up to 24 hours for reply.</span>
+
+                </form>
+              </div>
+            <% } %>
+          </div>
+        </div>
+      </section>
+      <button id="to-top-btn" class="btn shadow-sm" title="Back to Top"><svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 448 512"><path fill="#fff" d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg></button>
+    </main>
+
+    <%- include('partials/footbar.ejs') %>
+    <%- include('partials/scripts.ejs') %>
+  </body>
+</html>
