@@ -9,9 +9,11 @@ if (discoverBtn) {
   })
 }
 
-toTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0 })
-})
+if (toTopBtn) {
+  toTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0 })
+  })
+}
 
 window.addEventListener('scroll', () => {
   window.scrollY > window.innerHeight / 2 ? toTopBtn.classList.add('show-x') : toTopBtn.classList.remove('show-x')
