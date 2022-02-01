@@ -39,8 +39,8 @@
 
 ## About The Project
 
-The giamedical.com project is a static website for the company that delivers a brief summary about the company
-accompanied by contact information.
+The giamedical-simplified-website project is a Node.js / Express.JS website. The project's purpose is to replace
+[giamedical-temp-website](https://github.com/neumannmk/giamedical-temp-website.git).
 
 ### Built With
 
@@ -64,7 +64,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/krabfish/giamedical-simplified-website.git
+   git clone https://github.com/neumannmk/giamedical-simplified-website.git
    ```
 2. Install NPM packages
    ```sh
