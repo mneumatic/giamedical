@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/krabfish/giamedical.com">
+  <a href="https://github.com/sigewulf/giamedical.com">
     <img src="public/images/icon.png" alt="Logo" width="128" height="128">
   </a>
 
@@ -11,9 +11,9 @@
     Static Website for GIA Medical. GIA Medical is a California State Board of Pharmacy Licensed Biomedical Engineering Company that specializes in the repair and service of all brands of Hemodialysis, Plasmapheresis, Apheresis, and Reverse Osmosis equipment.
     <br />
     <br />
-    <a href="https://github.com/krabfish/giamedical.com/issues">Report Bug</a>
+    <a href="https://github.com/sigewulf/giamedical.com/issues">Report Bug</a>
     ·
-    <a href="https://github.com/krabfish/giamedical.com/issues">Request Feature</a>
+    <a href="https://github.com/sigewulf/giamedical.com/issues">Request Feature</a>
   </p>
 </p>
 
@@ -40,7 +40,7 @@
 ## About The Project
 
 The giamedical-simplified-website project is a Node.js / Express.JS website. The project's purpose is to replace
-[giamedical-temp-website](https://github.com/neumannmk/giamedical-temp-website.git).
+[giamedical-temp-website](https://github.com/sigewulf/giamedical-temp-website.git).
 
 ### Built With
 
@@ -64,7 +64,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/neumannmk/giamedical-simplified-website.git
+   git clone https://github.com/sigewulf/giamedical-simplified-website.git
    ```
 2. Install NPM packages
    ```sh
