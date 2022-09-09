@@ -5,7 +5,7 @@
     <img src="public/images/icon.png" alt="Logo" width="128" height="128">
   </a>
 
-<h3 align="center">giamedical-simplifed-website</h3>
+<h3 align="center">giamedical</h3>
 
   <p align="center">
     Static Website for GIA Medical. GIA Medical is a California State Board of Pharmacy Licensed Biomedical Engineering Company that specializes in the repair and service of all brands of Hemodialysis, Plasmapheresis, Apheresis, and Reverse Osmosis equipment.
@@ -38,9 +38,10 @@
 </details>
 
 ## About The Project
+<img src="docs/giamedical.png" alt="giamedical.com">
 
-The giamedical-simplified-website project is a Node.js / Express.JS website. The project's purpose is to replace
-[giamedical-temp-website](https://github.com/sigewulf/giamedical-temp-website.git).
+The purpose of the project was to design and build a simple solution for the company; in which, can be adjusted, scaled,
+and adapted to the businesses needs.
 
 ### Built With
 
