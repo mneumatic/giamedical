@@ -3,7 +3,6 @@ const express = require('express')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
-const sassMiddleware = require('node-sass-middleware')
 
 const indexRouter = require('./routes/index')
 
@@ -17,14 +16,7 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
-app.use(sassMiddleware({
-  src: path.join(__dirname, 'public/stylesheets'),
-  dest: path.join(__dirname, 'public/stylesheets'),
-  indentedSyntax: true, // true = .sass and false = .scss
-  outputStyle: 'compressed',
-  sourceMap: true,
-  prefix: '/stylesheets'
-}))
+
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist'), {}))
 

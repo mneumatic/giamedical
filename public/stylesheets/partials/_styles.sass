@@ -1,16 +1,16 @@
-@import '../modules/breakpoints'
-@import '../modules/variables'
+@use '../modules/breakpoints'
+@use '../modules/variables'
 
 .navbar
   .nav-link
-    background-color: $paolo-veronese-green
+    background-color: variables.$paolo-veronese-green
     border-radius: 50%
     display: flex
     align-items: center
     padding: .5rem
 
     &:hover
-      color: $paolo-veronese-green !important
+      color: variables.$paolo-veronese-green !important
 
 .hero,
 .four-0-four-hero
@@ -27,7 +27,7 @@
   color: #fff
   padding: calc(5rem + 64px) 0
 
-  @include media-breakpoint-up(large)
+  @include breakpoints.media-breakpoint-up(large)
     padding: 17vw 0
 
   button
@@ -51,7 +51,7 @@
 
 button,
 .btn
-  background-color: $paolo-veronese-green !important
+  background-color: variables.$paolo-veronese-green !important
   border-radius: 0 !important
   color: #fff !important
 
@@ -67,14 +67,14 @@ form textarea
   transform: translateX(0) !important
 
 .text-green
-  color: $paolo-veronese-green
+  color: variables.$paolo-veronese-green
 
 
 .bg-green
-  background-color: $paolo-veronese-green
+  background-color: variables.$paolo-veronese-green
 
 .bg-black-coral
-  background-color: $black-coral
+  background-color: variables.$black-coral
 
 .styled-list
   counter-reset: gia-counter
@@ -88,7 +88,7 @@ form textarea
 
     &::before
       content: counter(gia-counter)
-      background-color: $paolo-veronese-green
+      background-color: variables.$paolo-veronese-green
       border-radius: 50%
       color: #fff
       position: absolute
@@ -117,7 +117,7 @@ ul
       --size: 32px
       left: calc(-1 * var(--size) - 10px)
       top: -13px
-      color: $paolo-veronese-green
+      color: variables.$paolo-veronese-green
 
 meter
   background: whiteSmoke none
@@ -135,10 +135,10 @@ meter::-webkit-meter-bar
   height: 18px
 
 meter::-webkit-meter-optimum-value
-  background-image: linear-gradient($paolo-veronese-green, $paolo-veronese-green)
+  background-image: linear-gradient(variables.$paolo-veronese-green, variables.$paolo-veronese-green)
 
 meter::-moz-meter-bar
-  background-image: linear-gradient($paolo-veronese-green, $paolo-veronese-green)
+  background-image: linear-gradient(variables.$paolo-veronese-green, variables.$paolo-veronese-green)
 
 .already-visible
   opacity: 1 !important

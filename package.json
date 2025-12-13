@@ -4,20 +4,21 @@
   "private": true,
   "scripts": {
     "start": "node bin/www",
-    "dev": "nodemon bin/www"
+    "dev": "nodemon bin/www",
+    "sass": "sass -s compressed public/stylesheets/main.sass public/stylesheets/main.css",
+    "sass:watch": "sass --watch public/stylesheets/main.sass public/stylesheets/main.css"
   },
   "dependencies": {
     "bootstrap": "^5.1.1",
     "cookie-parser": "~1.4.4",
-    "csurf": "^1.11.0",
+    "csurf": "^1.2.2",
     "debug": "~2.6.9",
     "dotenv": "^10.0.0",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "ejs": "^3.1.10",
+    "express": "^4.22.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "node-sass-middleware": "0.11.0",
-    "nodemailer": "^6.6.5"
+    "morgan": "^1.10.1",
+    "nodemailer": "^7.0.11"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -25,6 +26,8 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "sass": "^1.96.0",
+    "sass-migrator": "^2.5.6"
   }
 }
